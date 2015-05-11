@@ -27,7 +27,7 @@ map <F10> :NERDTreeFind<CR>
 map <F12> :NERDTreeToggle<CR>
 
 " Command T
-set wildignore+=*.pyc,*.class,*.cache,*target/*
+set wildignore+=*.pyc,*.class,*.cache,*target/*,venv/*
 
 " allow multi-indent
 vnoremap < <gv
