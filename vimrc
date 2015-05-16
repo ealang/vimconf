@@ -14,19 +14,29 @@ set nowrap
 
 set background=dark
 
+set noswapfile
+
+set clipboard=unnamedplus " Use system clipboard
+
+" Move lines and blocks
+nnoremap <C-K> :m -2<CR>
+nnoremap <C-J> :m +1<CR>
+vnoremap <C-K> :m -2<CR>gv
+vnoremap <C-J> :m '>+1<CR>gv
+
 " Ctags
 set tags=./tags;/
-map <Leader>]s :sp <CR>:exec("tag ".expand("<cword>"))<CR>
-map <Leader>]v :vsp <CR>:exec("tag ".expand("<cword>"))<CR>
-map <Leader>]t :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
+noremap <Leader>]s :sp <CR>:exec("tag ".expand("<cword>"))<CR>
+noremap <Leader>]v :vsp <CR>:exec("tag ".expand("<cword>"))<CR>
+noremap <Leader>]t :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
 
 " Insert time
 nnoremap <Leader>d "=strftime("%c")<CR>P
 
 " NERDTree
 let NERDTreeIgnore=['\~$', '\.pyc$']
-map <F10> :NERDTreeFind<CR>
-map <F12> :NERDTreeToggle<CR>
+noremap <F10> :NERDTreeFind<CR>
+noremap <F12> :NERDTreeToggle<CR>
 
 " Command T
 set wildignore+=*.pyc,*.class,*.cache,*target/*,venv/*
@@ -48,4 +58,4 @@ let g:syntastic_python_flake8_args='--ignore=E501' " 79 char limit
 let g:syntastic_mode_map = { "mode": "active",
                            \ "active_filetypes": [],
                            \ "passive_filetypes": ["scala"] }
-map <Leader>s :SyntasticCheck<CR>
+noremap <Leader>s :SyntasticCheck<CR>

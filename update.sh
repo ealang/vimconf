@@ -3,8 +3,7 @@ git pull
 git submodule init
 git submodule foreach git pull origin master
 
-sudo apt-get install python-pip ruby-dev vim.nox
-sudo pip install flake8
+sudo apt-get install -y ruby-dev vim-gtk python-flake8
 
 pushd "bundle/Command-T/ruby/command-t"
 ruby extconf.rb
