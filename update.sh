@@ -1,4 +1,8 @@
 #!/bin/bash
+git pull
+git submodule init
+git submodule foreach git pull origin master
+
 sudo apt-get install python-pip ruby-dev vim.nox
 sudo pip install flake8
 
