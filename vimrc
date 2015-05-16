@@ -59,3 +59,7 @@ let g:syntastic_mode_map = { "mode": "active",
                            \ "active_filetypes": [],
                            \ "passive_filetypes": ["scala"] }
 noremap <Leader>s :SyntasticCheck<CR>
+
+" Ack.vim
+let g:ack_use_dispatch = 1
+noremap <Leader>a :Ack! --known-types ""<Left>
