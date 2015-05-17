@@ -66,7 +66,8 @@ let g:ctrlp_working_path_mode = 0 " Use cwd for search path
 let g:ctrlp_match_window_reversed = 0
 let g:ctrlp_max_height = 30
 let g:ctrlp_custom_ignore = {
-  \ 'dir':  '\.git$\|\.hg$\|venv$\|target$' }
+  \ 'dir':  '\.git$\|\.hg$\|venv$\|target$',
+  \ 'file':  '\.pyc$' }
 
 let g:ctrlp_funky_syntax_highlight = 1
 let g:ctrlp_funky_nolim = 1
