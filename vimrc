@@ -38,9 +38,6 @@ let NERDTreeIgnore=['\~$', '\.pyc$']
 noremap <F10> :NERDTreeFind<CR>
 noremap <F12> :NERDTreeToggle<CR>
 
-" Command T
-set wildignore+=*.pyc,*.class,*.cache,*target/*,venv/*
-
 " Allow multi-indent
 vnoremap < <gv
 vnoremap > >gv
@@ -58,8 +55,23 @@ let g:syntastic_python_flake8_args='--ignore=E501' " 79 char limit
 let g:syntastic_mode_map = { "mode": "active",
                            \ "active_filetypes": [],
                            \ "passive_filetypes": ["scala"] }
-noremap <Leader>s :SyntasticCheck<CR>
+noremap <Leader>s :w<CR>:SyntasticCheck<CR>
 
 " Ack.vim
 let g:ack_use_dispatch = 1
 noremap <Leader>a :Ack! --known-types ""<Left>
+
+" CtrlP and CtrlP-Funky
+let g:ctrlp_working_path_mode = 0 " Use cwd for search path
+let g:ctrlp_match_window_reversed = 0
+let g:ctrlp_max_height = 30
+let g:ctrlp_custom_ignore = {
+  \ 'dir':  '\.git$\|\.hg$\|venv$\|target$' }
+
+let g:ctrlp_funky_syntax_highlight = 1
+let g:ctrlp_funky_nolim = 1
+
+noremap <Leader>f :CtrlP<CR>
+noremap <Leader>t :CtrlPTag<CR>
+noremap <Leader>b :CtrlPBuffer<CR>
+noremap <Leader>r :CtrlPFunky<CR>
