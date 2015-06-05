@@ -16,13 +16,26 @@ set background=dark
 
 set noswapfile
 
+let mapleader = "\<Space>"
+
+" Search options
+set incsearch
+set hlsearch
+nnoremap <silent> <Leader>/ :nohlsearch<CR><C-L>  " https://github.com/tpope/vim-sensible/blob/master/plugin/sensible.vim
+
+" Copy & paste
 set clipboard=unnamedplus " Use system clipboard
 
 " Move lines and blocks
-nnoremap <C-K> :m -2<CR>
-nnoremap <C-J> :m +1<CR>
-vnoremap <C-K> :m -2<CR>gv
-vnoremap <C-J> :m '>+1<CR>gv
+vnoremap <C-S-K> :m -2<CR>gv
+vnoremap <C-S-J> :m '>+1<CR>gv
+
+" Save
+noremap <C-S> :update<CR>
+inoremap <C-S> <C-O>:update<CR>
+
+" Enable mouse
+set mouse=a
 
 " Ctags
 set tags=./tags;/
@@ -35,8 +48,10 @@ nnoremap <Leader>d "=strftime("%c")<CR>P
 
 " NERDTree
 let NERDTreeIgnore=['\~$', '\.pyc$']
-noremap <F10> :NERDTreeFind<CR>
-noremap <F12> :NERDTreeToggle<CR>
+noremap <F10> <ESC>:NERDTreeFind<CR>
+noremap <F12> <ESC>:NERDTreeToggle<CR>
+imap <F10> <ESC><F10>
+imap <F12> <ESC><F12>
 
 " Allow multi-indent
 vnoremap < <gv
