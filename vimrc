@@ -37,6 +37,12 @@ inoremap <C-S> <C-O>:update<CR>
 " Enable mouse
 set mouse=a
 
+" vim-tmux-navigator
+inoremap <silent> <C-H> <ESC>:TmuxNavigateLeft<cr>
+inoremap <silent> <C-L> <ESC>:TmuxNavigateRight<cr>
+inoremap <silent> <C-J> <ESC>:TmuxNavigateDown<cr>
+inoremap <silent> <C-K> <ESC>:TmuxNavigateUp<cr>
+
 " Ctags
 set tags=./tags;/
 noremap <Leader>]s :sp <CR>:exec("tag ".expand("<cword>"))<CR>
