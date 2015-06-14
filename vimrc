@@ -23,8 +23,12 @@ set incsearch
 set hlsearch
 nnoremap <silent> <Leader>/ :nohlsearch<CR><C-L>  " https://github.com/tpope/vim-sensible/blob/master/plugin/sensible.vim
 
-" Copy & paste
-set clipboard=unnamedplus " Use system clipboard
+" Use system clipboard
+if has("win32")
+  set clipboard=unnamed
+else
+  set clipboard=unnamedplus
+endif
 
 " Move lines and blocks
 vnoremap <C-S-K> :m -2<CR>gv
