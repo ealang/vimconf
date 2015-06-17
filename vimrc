@@ -6,6 +6,7 @@ filetype plugin indent on
 set tabstop=4
 set shiftwidth=4
 set expandtab
+set backspace=2
 
 set foldmethod=indent
 set nofoldenable " no initial folding
