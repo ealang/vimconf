@@ -50,15 +50,17 @@ inoremap <silent> <C-K> <ESC>:TmuxNavigateUp<cr>
 
 " Ctags
 set tags=./tags;/
-noremap <Leader>]s :sp <CR>:exec("tag ".expand("<cword>"))<CR>
-noremap <Leader>]v :vsp <CR>:exec("tag ".expand("<cword>"))<CR>
-noremap <Leader>]t :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
+set hidden  " Allow navigate without saving current buffer
 
 " Insert time
 nnoremap <Leader>d "=strftime("%c")<CR>P
 
 " NERDTree
 let NERDTreeIgnore=['\~$', '\.pyc$']
+let NERDTreeMapJumpNextSibling = 0 " Prevent conflict with vim-tmux-navigator
+let NERDTreeMapJumpPrevSibling = 0 " Prevent conflict with vim-tmux-navigator
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif " Close if NERDTree is only window left 
+
 noremap <F10> <ESC>:NERDTreeFind<CR>
 noremap <F12> <ESC>:NERDTreeToggle<CR>
 imap <F10> <ESC><F10>
