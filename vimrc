@@ -15,7 +15,7 @@ set nofoldenable " no initial folding
 
 set nowrap
 
-set background=dark
+colorscheme monokai
 
 set noswapfile
 
