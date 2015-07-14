@@ -51,8 +51,8 @@ inoremap <silent> <C-J> <ESC>:TmuxNavigateDown<cr>
 inoremap <silent> <C-K> <ESC>:TmuxNavigateUp<cr>
 
 " Ctags
-set tags=./tags;/
-set hidden  " Allow navigate without saving current buffer
+set tags=tags; " Look for tags in cwd and parents
+set hidden " Allow navigate without saving current buffer
 
 " Insert time
 nnoremap <Leader>d "=strftime("%c")<CR>P
