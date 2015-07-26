@@ -14,6 +14,7 @@ set foldmethod=indent
 set nofoldenable " no initial folding
 
 set nowrap
+set linebreak
 
 colorscheme monokai
 
@@ -32,6 +33,10 @@ if has("win32")
 else
   set clipboard=unnamedplus
 endif
+
+" Navigate wrapped lines intuitively
+nnoremap j gj
+nnoremap k gk
 
 " Move lines and blocks
 vnoremap <C-S-K> :m -2<CR>gv
