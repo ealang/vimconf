@@ -63,7 +63,7 @@ set hidden " Allow navigate without saving current buffer
 nnoremap <Leader>d "=strftime("%c")<CR>P
 
 " NERDTree
-let NERDTreeIgnore=['\~$', '\.pyc$']
+let NERDTreeIgnore=['\~$', '\.pyc$', '\.class$']
 let NERDTreeMapJumpNextSibling = 0 " Prevent conflict with vim-tmux-navigator
 let NERDTreeMapJumpPrevSibling = 0 " Prevent conflict with vim-tmux-navigator
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif " Close if NERDTree is only window left 
@@ -88,9 +88,9 @@ let g:syntastic_check_on_wq = 1
 let g:syntastic_javascript_checkers = ['jshint']
 let g:syntastic_python_checkers=['flake8']
 let g:syntastic_python_flake8_args='--ignore=E501' " 79 char limit
-let g:syntastic_mode_map = { "mode": "active",
-                           \ "active_filetypes": [],
-                           \ "passive_filetypes": ["scala"] }
+let g:syntastic_mode_map = { "mode": "passive",
+                           \ "active_filetypes": ["python"],
+                           \ "passive_filetypes": [] }
 noremap <Leader>s :w<CR>:SyntasticCheck<CR>
 
 " Ack.vim
@@ -102,8 +102,8 @@ let g:ctrlp_working_path_mode = 0 " Use cwd for search path
 let g:ctrlp_match_window_reversed = 0
 let g:ctrlp_max_height = 30
 let g:ctrlp_custom_ignore = {
-  \ 'dir':  '\.git$\|\.hg$\|venv$\|target$\|build$',
-  \ 'file':  '\.pyc$' }
+  \ 'dir': '\.git$\|\.hg$\|venv$\|target$\|build$',
+  \ 'file': '\.pyc$\|\.class$' }
 
 noremap <Leader>f :CtrlP<CR>
 noremap <Leader>t :CtrlPTag<CR>
