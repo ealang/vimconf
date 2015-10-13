@@ -105,10 +105,11 @@ let g:ctrlp_custom_ignore = {
   \ 'dir':  '\.git$\|\.hg$\|venv$\|target$\|build$',
   \ 'file':  '\.pyc$' }
 
-let g:ctrlp_funky_syntax_highlight = 1
-let g:ctrlp_funky_nolim = 1
-
 noremap <Leader>f :CtrlP<CR>
 noremap <Leader>t :CtrlPTag<CR>
 noremap <Leader>b :CtrlPBuffer<CR>
-noremap <Leader>r :CtrlPFunky<CR>
+
+" Tagbar
+noremap <Leader>r :TagbarOpenAutoClose<CR>
+noremap <Leader>R :TagbarToggle<CR>
+let g:tagbar_foldlevel = 1
