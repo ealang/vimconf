@@ -20,6 +20,8 @@ colorscheme monokai
 
 set noswapfile
 
+set statusline=%f " name of file in status
+
 let mapleader = "\<Space>"
 
 " Search options
