@@ -115,3 +115,7 @@ noremap <Leader>b :CtrlPBuffer<CR>
 noremap <Leader>r :TagbarOpenAutoClose<CR>
 noremap <Leader>R :TagbarToggle<CR>
 let g:tagbar_foldlevel = 1
+
+" Close window shortcut
+nnoremap Q q
+nnoremap q :q<CR>
