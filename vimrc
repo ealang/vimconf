@@ -10,8 +10,9 @@ set shiftwidth=4
 set expandtab
 set backspace=2
 
+" Folds
 set foldmethod=indent
-set nofoldenable " no initial folding
+autocmd BufWinEnter * normal zR
 
 set nowrap
 set linebreak
@@ -68,7 +69,7 @@ nnoremap <Leader>d "=strftime("%c")<CR>P
 let NERDTreeIgnore=['\~$', '\.pyc$', '\.class$']
 let NERDTreeMapJumpNextSibling = 0 " Prevent conflict with vim-tmux-navigator
 let NERDTreeMapJumpPrevSibling = 0 " Prevent conflict with vim-tmux-navigator
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif " Close if NERDTree is only window left 
+autocmd BufEnter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif " Close if NERDTree is only window left
 
 noremap <F10> <ESC>:NERDTreeFind<CR>
 noremap <F12> <ESC>:NERDTreeToggle<CR>
