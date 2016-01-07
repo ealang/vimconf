@@ -69,6 +69,9 @@ nnoremap <Leader>d "=strftime("%c")<CR>P
 let NERDTreeIgnore=['\~$', '\.pyc$', '\.class$']
 let NERDTreeMapJumpNextSibling = 0 " Prevent conflict with vim-tmux-navigator
 let NERDTreeMapJumpPrevSibling = 0 " Prevent conflict with vim-tmux-navigator
+let NERDTreeMapOpenSplit='<C-s>'
+let NERDTreeMapOpenVSplit='<C-v>'
+let NERDTreeMapOpenInTab='<C-t>'
 autocmd BufEnter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif " Close if NERDTree is only window left
 
 noremap <F10> <ESC>:NERDTreeFind<CR>
