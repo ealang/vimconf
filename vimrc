@@ -60,13 +60,12 @@ inoremap <silent> <C-K> <ESC>:TmuxNavigateUp<cr>
 
 " Ctags
 set tags=tags; " Look for tags in cwd and parents
-set hidden " Allow navigate without saving current buffer
 
 " Insert time
 nnoremap <Leader>d "=strftime("%c")<CR>P
 
 " NERDTree
-let NERDTreeIgnore=['\~$', '\.pyc$', '\.class$']
+let NERDTreeIgnore=['\~$', '\.pyc$', '\.class$', '^__pycache__$']
 let NERDTreeMapJumpNextSibling = 0 " Prevent conflict with vim-tmux-navigator
 let NERDTreeMapJumpPrevSibling = 0 " Prevent conflict with vim-tmux-navigator
 let NERDTreeMapOpenSplit='<C-s>'
@@ -123,3 +122,10 @@ let g:tagbar_foldlevel = 1
 " Close window shortcut
 nnoremap Q q
 nnoremap q :q<CR>
+
+" P4
+if !empty($P4ROOT)
+  let g:perforce_auto_source_dirs = [$P4ROOT]
+else
+  let g:perforce_open_on_save = 0
+endif

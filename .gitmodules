@@ -31,9 +31,6 @@
 [submodule "bundle/vim-tmux-navigator"]
 	path = bundle/vim-tmux-navigator
 	url = https://github.com/christoomey/vim-tmux-navigator
-[submodule "bundle/vim-go"]
-	path = bundle/vim-go
-	url = https://github.com/fatih/vim-go.git
 [submodule "bundle/nerdtree-git-plugin"]
 	path = bundle/nerdtree-git-plugin
 	url = https://github.com/Xuyuanp/nerdtree-git-plugin
@@ -46,6 +43,6 @@
 [submodule "bundle/vim-colorstepper"]
 	path = bundle/vim-colorstepper
 	url = https://github.com/qualiabyte/vim-colorstepper
-[submodule "bundle/vim-glsl"]
-	path = bundle/vim-glsl
-	url = https://github.com/tikhomirov/vim-glsl
+[submodule "bundle/vim-perforce"]
+	path = bundle/vim-perforce
+	url = https://github.com/nfvs/vim-perforce
