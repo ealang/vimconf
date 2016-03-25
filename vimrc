@@ -51,6 +51,7 @@ inoremap <C-S> <C-O>:update<CR>
 
 " Enable mouse
 set mouse=a
+set ttymouse=xterm2
 
 " vim-tmux-navigator
 inoremap <silent> <C-H> <ESC>:TmuxNavigateLeft<cr>
