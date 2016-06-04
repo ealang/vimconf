@@ -73,10 +73,9 @@ let NERDTreeMapJumpPrevSibling = 0 " Prevent conflict with vim-tmux-navigator
 let NERDTreeMapOpenSplit='<C-s>'
 let NERDTreeMapOpenVSplit='<C-v>'
 let NERDTreeMapOpenInTab='<C-t>'
-autocmd BufEnter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif " Close if NERDTree is only window left
 
-noremap <F10> <ESC>:NERDTreeFind<CR>
-noremap <F12> <ESC>:NERDTreeToggle<CR>
+noremap <F10> <ESC>:NERDTreeTabsFind<CR>
+noremap <F12> <ESC>:NERDTreeTabsToggle<CR>
 imap <F10> <ESC><F10>
 imap <F12> <ESC><F12>
 
