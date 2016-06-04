@@ -16,6 +16,7 @@ autocmd BufWinEnter * normal zR
 
 set nowrap
 set linebreak
+set breakindent
 
 colorscheme monokai
 
