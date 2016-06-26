@@ -67,14 +67,14 @@ set tags=tags; " Look for tags in cwd and parents
 nnoremap <Leader>d "=strftime("%c")<CR>P
 
 " NERDTree
-let NERDTreeIgnore=['\~$', '\.pyc$', '\.class$', '^__pycache__$']
+let NERDTreeIgnore=['\~$', '\.pyc$', '\.class$', '^__pycache__$', '.o$']
 let NERDTreeMapJumpNextSibling = 0 " Prevent conflict with vim-tmux-navigator
 let NERDTreeMapJumpPrevSibling = 0 " Prevent conflict with vim-tmux-navigator
 let NERDTreeMapOpenSplit='<C-s>'
 let NERDTreeMapOpenVSplit='<C-v>'
 let NERDTreeMapOpenInTab='<C-t>'
 
-noremap <F10> <ESC>:NERDTreeTabsFind<CR>
+noremap <F10> <ESC>:NERDTreeFind<CR>:NERDTreeTabsOpen<CR>
 noremap <F12> <ESC>:NERDTreeTabsToggle<CR>
 imap <F10> <ESC><F10>
 imap <F12> <ESC><F12>
@@ -109,14 +109,14 @@ let g:ctrlp_match_window_reversed = 0
 let g:ctrlp_max_height = 30
 let g:ctrlp_custom_ignore = {
   \ 'dir': '\.git$\|\.hg$\|venv$\|target$\|build$',
-  \ 'file': '\.pyc$\|\.class$' }
+  \ 'file': '\.pyc$\|\.class$\|\.o$' }
 
 noremap <Leader>f :CtrlP<CR>
 noremap <Leader>t :CtrlPTag<CR>
 noremap <Leader>b :CtrlPBuffer<CR>
 
 " Tagbar
-noremap <Leader>r :TagbarOpenAutoClose<CR>
+noremap <Leader>r :TagbarOpenAutoClose<CR>/\c
 noremap <Leader>R :TagbarToggle<CR>
 let g:tagbar_foldlevel = 1
 
