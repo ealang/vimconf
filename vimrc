@@ -65,7 +65,7 @@ inoremap <silent> <C-K> <ESC>:TmuxNavigateUp<cr>
 set tags=tags; " Look for tags in cwd and parents
 
 " Insert time
-nnoremap <Leader>d "=strftime("%c")<CR>P
+nnoremap <Leader>d "=strftime("%c")<CR>p
 
 " NERDTree
 let NERDTreeIgnore=['\~$', '\.pyc$', '\.class$', '^__pycache__$', '.o$']
