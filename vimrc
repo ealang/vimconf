@@ -22,7 +22,8 @@ colorscheme monokai
 
 set noswapfile
 
-set statusline=%f " name of file in status
+set statusline=%f%=%P " name of file in status
+set laststatus=2
 
 let mapleader = "\<Space>"
 
