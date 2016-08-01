@@ -30,7 +30,8 @@ let mapleader = "\<Space>"
 " Search options
 set incsearch
 set hlsearch
-nnoremap <silent> <Leader>/ :nohlsearch<CR><C-L>  " https://github.com/tpope/vim-sensible/blob/master/plugin/sensible.vim
+nnoremap / /\c
+nnoremap <silent> <Leader>/ :nohlsearch<CR><C-L>
 
 " Use system clipboard
 if has("win32")
