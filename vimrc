@@ -94,7 +94,7 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 1
 let g:syntastic_javascript_checkers = ['jshint']
 let g:syntastic_python_checkers=['flake8']
-let g:syntastic_python_flake8_args='--ignore=E501' " 79 char limit
+let g:syntastic_python_flake8_args='--ignore=E501,E302' " 79 char limit, 2 line breaks
 let g:syntastic_mode_map = { "mode": "passive",
                            \ "active_filetypes": ["python"],
                            \ "passive_filetypes": [] }
