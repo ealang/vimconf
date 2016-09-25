@@ -75,6 +75,7 @@ let NERDTreeMapJumpPrevSibling = 0 " Prevent conflict with vim-tmux-navigator
 let NERDTreeMapOpenSplit='<C-s>'
 let NERDTreeMapOpenVSplit='<C-v>'
 let NERDTreeMapOpenInTab='<C-t>'
+set encoding=utf-8 " Fix garbled arrows
 
 noremap <F10> <ESC>:NERDTreeFind<CR>:NERDTreeTabsOpen<CR>
 noremap <F12> <ESC>:NERDTreeTabsToggle<CR>
