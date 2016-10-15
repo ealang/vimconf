@@ -106,6 +106,10 @@ noremap <Leader>s :w<CR>:SyntasticCheck<CR>
 let g:ack_use_dispatch = 1
 noremap <Leader>a :Ack! --known-types ""<Left>
 
+" https://github.com/mileszs/ack.vim/blob/6ef28a1c0839415c0a1cfc40f22344da52d5404d/plugin/ack.vim#L29
+let g:ack_mappings = { "<C-T>": "<C-W><CR><C-W>T",
+                     \  "<C-S>": "<C-W><CR>",
+                     \  "<C-V>": "<C-W><CR><C-W>H<C-W>b<C-W>J<C-W>t" }
 " CtrlP and CtrlP-Funky
 let g:ctrlp_working_path_mode = 0 " Use cwd for search path
 let g:ctrlp_match_window_reversed = 0
