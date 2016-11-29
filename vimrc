@@ -1,6 +1,8 @@
 runtime bundle/vim-pathogen/autoload/pathogen.vim
 execute pathogen#infect()
 
+let $VIMHOME=expand('<sfile>:p:h') " http://superuser.com/a/120011
+
 set number
 
 syntax on
@@ -123,10 +125,26 @@ noremap <Leader>t :CtrlPTag<CR>
 noremap <Leader>b :CtrlPBuffer<CR>
 
 " Tagbar
-noremap <Leader>r :TagbarOpenAutoClose<CR>/\c
+noremap <Leader>r :TagbarOpenAutoClose<CR>
 noremap <Leader>R :TagbarToggle<CR>
 let g:tagbar_foldlevel = 1
 let g:tagbar_sort = 0
+
+" https://github.com/majutsushi/tagbar/wiki#markdown
+let g:tagbar_type_markdown = {
+    \ 'ctagstype': 'markdown',
+    \ 'ctagsbin' : $VIMHOME . '/support/markdown2ctags/markdown2ctags.py',
+    \ 'ctagsargs' : '-f - --sort=yes',
+    \ 'kinds' : [
+        \ 's:sections',
+        \ 'i:images'
+    \ ],
+    \ 'sro' : '|',
+    \ 'kind2scope' : {
+        \ 's' : 'section',
+    \ },
+    \ 'sort': 0,
+\ }
 
 " Close window shortcut
 nnoremap Q q
