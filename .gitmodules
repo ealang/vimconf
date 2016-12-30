@@ -52,3 +52,6 @@
 [submodule "support/markdown2ctags"]
 	path = support/markdown2ctags
 	url = https://github.com/jszakmeister/markdown2ctags
+[submodule "support/rst2ctags"]
+	path = support/rst2ctags
+	url = https://github.com/jszakmeister/rst2ctags
