@@ -20,7 +20,7 @@ set nowrap
 set linebreak
 set breakindent
 
-colorscheme monokai
+colorscheme hybrid_reverse
 
 set noswapfile
 

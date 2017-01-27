@@ -5,7 +5,7 @@ set guioptions-=L  "remove left-hand scroll bar
 
 if has("win32")
   cd $HOME
-  set guifont=Consolas:h14:cANSI
-  " http://www.vim.org/scripts/script.php?script_id=2596
-  map <F11> <Esc>:call libcallnr("gvimfullscreen.dll", "ToggleFullScreen", 0)<CR>
+  set guifont=Consolas:h12:cANSI
 endif
+
+let g:nerdtree_tabs_open_on_gui_startup=0
