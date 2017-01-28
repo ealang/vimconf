@@ -21,6 +21,7 @@ set linebreak
 set breakindent
 
 colorscheme hybrid_reverse
+set background=dark
 
 set noswapfile
 
@@ -33,6 +34,7 @@ let mapleader = "\<Space>"
 set incsearch
 set hlsearch
 nnoremap / /\c
+nnoremap ? ?\c
 nnoremap <silent> <Leader>/ :nohlsearch<CR><C-L>
 
 " Use system clipboard
@@ -116,6 +118,7 @@ let g:ack_mappings = { "<C-T>": "<C-W><CR><C-W>T",
 let g:ctrlp_working_path_mode = 0 " Use cwd for search path
 let g:ctrlp_match_window_reversed = 0
 let g:ctrlp_max_height = 30
+let g:ctrlp_follow_symlinks = 1
 let g:ctrlp_custom_ignore = {
   \ 'dir': '\.git$\|\.hg$\|venv$\|target$\|build$',
   \ 'file': '\.pyc$\|\.class$\|\.o$' }
