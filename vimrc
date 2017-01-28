@@ -20,8 +20,9 @@ set nowrap
 set linebreak
 set breakindent
 
-colorscheme hybrid_reverse
+set t_Co=256
 set background=dark
+colorscheme hybrid_reverse
 
 set noswapfile
 
