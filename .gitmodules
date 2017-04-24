@@ -55,6 +55,3 @@
 [submodule "support/rst2ctags"]
 	path = support/rst2ctags
 	url = https://github.com/jszakmeister/rst2ctags
-[submodule "bundle/vim-hybrid-material"]
-	path = bundle/vim-hybrid-material
-	url = https://github.com/kristijanhusak/vim-hybrid-material
