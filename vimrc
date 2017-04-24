@@ -110,7 +110,7 @@ noremap <Leader>s :w<CR>:SyntasticCheck<CR>
 let g:ack_use_dispatch = 1
 noremap <Leader>a :Ack! --known-types -i ""<Left>
 " search selection - http://stackoverflow.com/a/28011266
-vnoremap <Leader>A y:Ack --known-types -i "<C-r>=fnameescape(@")<CR>"
+vnoremap <Leader>a y:Ack --known-types -i "<C-r>=fnameescape(@")<CR>"
 
 " https://github.com/mileszs/ack.vim/blob/6ef28a1c0839415c0a1cfc40f22344da52d5404d/plugin/ack.vim#L29
 let g:ack_mappings = { "<C-T>": "<C-W><CR><C-W>T",
