@@ -52,6 +52,10 @@ nnoremap k gk
 vnoremap <C-S-K> :m -2<CR>gv
 vnoremap <C-S-J> :m '>+1<CR>gv
 
+" Faster scrolling
+nnoremap <C-Y> 3<C-Y>
+nnoremap <C-E> 3<C-E>
+
 " Save
 noremap <C-S> :update<CR>
 inoremap <C-S> <C-O>:update<CR>
