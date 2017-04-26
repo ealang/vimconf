@@ -134,7 +134,7 @@ noremap <Leader>t :CtrlPTag<CR>
 noremap <Leader>b :CtrlPBuffer<CR>
 
 " Tagbar
-noremap <Leader>r :TagbarOpenAutoClose<CR>
+noremap <Leader>r :TagbarOpenAutoClose<CR>/\c
 noremap <Leader>R :TagbarToggle<CR>
 let g:tagbar_foldlevel = 1
 let g:tagbar_sort = 0
@@ -180,3 +180,8 @@ if !empty($P4ROOT)
 else
   let g:perforce_open_on_save = 0
 endif
+
+" Toggle spelling
+nnoremap <F5> :setlocal spell! <CR>
+imap <F5> <C-o><F5>
+vmap <F5> <ESC><F5>gv
