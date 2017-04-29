@@ -20,6 +20,8 @@ Clone to vim home directory and run update.sh.
 | Prev color scheme           | \<F6\>    |
 | Next color scheme           | \<F7\>    |
 | Leader key                  | \<space\> |
+| Run code analysis           | \<space\>-s |
+| Insert timestamp            | \<space\>-d |
 | Undo git hunk               | \<space\>-hu |
 | Stage git hunk              | \<space\>-hs |
 | Preview git hunk            | \<space\>-hp |
