@@ -84,8 +84,8 @@ let NERDTreeMapOpenVSplit='<C-v>'
 let NERDTreeMapOpenInTab='<C-t>'
 set encoding=utf-8 " Fix garbled arrows
 
-noremap <F10> <ESC>:NERDTreeFind<CR>:NERDTreeTabsOpen<CR>
-noremap <F12> <ESC>:NERDTreeTabsToggle<CR>
+noremap <F10> <ESC>:NERDTreeFind<CR>
+noremap <F12> <ESC>:NERDTreeToggle<CR>
 imap <F10> <ESC><F10>
 imap <F12> <ESC><F12>
 
@@ -109,11 +109,13 @@ let g:syntastic_mode_map = { "mode": "passive",
                            \ "passive_filetypes": [] }
 noremap <Leader>s :w<CR>:SyntasticCheck<CR>
 
-" Ack.vim
-let g:ack_use_dispatch = 1
-nnoremap <Leader>a :Ack! --known-types -i "<C-r>=expand('<cword>')<CR>"<Left>
-" search selection - http://stackoverflow.com/a/28011266
-vnoremap <Leader>a y:Ack --known-types -i "<C-r>=fnameescape(@")<CR>"<Left>
+" search
+let g:qfenter_keymap = {}
+let g:qfenter_keymap.vopen = ['<C-v>']
+let g:qfenter_keymap.hopen = ['<C-CR>', '<C-s>', '<C-x>']
+let g:qfenter_keymap.topen = ['<C-t>']
+vnoremap <Leader>a y:GrepperAck --known-types -i "<C-r>=fnameescape(@")<CR>"<Left>
+nnoremap <Leader>a :GrepperAck --known-types -i "<C-r>=expand('<cword>')<CR>"<Left>
 
 " https://github.com/mileszs/ack.vim/blob/6ef28a1c0839415c0a1cfc40f22344da52d5404d/plugin/ack.vim#L29
 let g:ack_mappings = { "<C-T>": "<C-W><CR><C-W>T",

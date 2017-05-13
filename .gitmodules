@@ -19,12 +19,6 @@
 [submodule "bundle/syntastic"]
 	path = bundle/syntastic
 	url = https://github.com/scrooloose/syntastic
-[submodule "bundle/ack.vim"]
-	path = bundle/ack.vim
-	url = https://github.com/mileszs/ack.vim
-[submodule "bundle/vim-dispatch"]
-	path = bundle/vim-dispatch
-	url = https://github.com/tpope/vim-dispatch
 [submodule "bundle/ctrlp.vim"]
 	path = bundle/ctrlp.vim
 	url = https://github.com/ctrlpvim/ctrlp.vim
@@ -46,12 +40,18 @@
 [submodule "bundle/vim-perforce"]
 	path = bundle/vim-perforce
 	url = https://github.com/nfvs/vim-perforce
-[submodule "bundle/vim-nerdtree-tabs"]
-	path = bundle/vim-nerdtree-tabs
-	url = https://github.com/jistr/vim-nerdtree-tabs
 [submodule "support/markdown2ctags"]
 	path = support/markdown2ctags
 	url = https://github.com/jszakmeister/markdown2ctags
 [submodule "support/rst2ctags"]
 	path = support/rst2ctags
 	url = https://github.com/jszakmeister/rst2ctags
+[submodule "bundle/vim-grepper"]
+	path = bundle/vim-grepper
+	url = https://github.com/mhinz/vim-grepper
+[submodule "bundle/QFEnter"]
+	path = bundle/QFEnter
+	url = https://github.com/yssl/QFEnter
+[submodule "bundle/macvim-light"]
+	path = bundle/macvim-light
+	url = https://github.com/aunsira/macvim-light
