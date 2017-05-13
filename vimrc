@@ -175,13 +175,6 @@ let g:tagbar_type_rst = {
 nnoremap Q q
 nnoremap q :q<CR>
 
-" P4
-if !empty($P4ROOT)
-  let g:perforce_auto_source_dirs = [$P4ROOT]
-else
-  let g:perforce_open_on_save = 0
-endif
-
 " Toggle spelling
 nnoremap <F5> :setlocal spell! <CR>
 imap <F5> <C-o><F5>
