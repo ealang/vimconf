@@ -12,8 +12,7 @@ set shiftwidth=4
 set expandtab
 set backspace=2
 
-" Folds
-set foldmethod=indent
+set foldmethod=syntax
 autocmd BufWinEnter * normal zR
 
 set nowrap
