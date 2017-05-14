@@ -27,6 +27,10 @@ set noswapfile
 set statusline=%f%=%P " name of file in status
 set laststatus=2
 
+" load files changed outside vim
+set autoread
+autocmd FocusGained,BufEnter * silent! checktime
+
 let mapleader = "\<Space>"
 
 " Search options
@@ -93,21 +97,10 @@ imap <F12> <ESC><F12>
 vnoremap < <gv
 vnoremap > >gv
 
-" Syntastic
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-let g:syntastic_always_populate_loc_list = 0
-let g:syntastic_auto_loc_list = 0
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 1
-let g:syntastic_javascript_checkers = ['jshint']
-let g:syntastic_python_checkers=['flake8']
-let g:syntastic_python_flake8_args='--ignore=E501,E302' " 79 char limit, 2 line breaks
-let g:syntastic_mode_map = { "mode": "passive",
-                           \ "active_filetypes": ["python", "javascript"],
-                           \ "passive_filetypes": [] }
-noremap <Leader>s :w<CR>:SyntasticCheck<CR>
+" Ale linting
+let g:ale_python_flake8_options = '--ignore=E501,E302'   " 79 char limit, 2 line breaks
+let g:ale_lint_delay = 1500
+noremap <Leader>s :call ale#Lint()<CR>
 
 " search
 let g:qfenter_keymap = {}
@@ -117,11 +110,7 @@ let g:qfenter_keymap.topen = ['<C-t>']
 vnoremap <Leader>a y:GrepperAck --known-types -i "<C-r>=fnameescape(@")<CR>"<Left>
 nnoremap <Leader>a :GrepperAck --known-types -i "<C-r>=expand('<cword>')<CR>"<Left>
 
-" https://github.com/mileszs/ack.vim/blob/6ef28a1c0839415c0a1cfc40f22344da52d5404d/plugin/ack.vim#L29
-let g:ack_mappings = { "<C-T>": "<C-W><CR><C-W>T",
-                     \  "<C-S>": "<C-W><CR>",
-                     \  "<C-V>": "<C-W><CR><C-W>H<C-W>b<C-W>J<C-W>t" }
-" CtrlP and CtrlP-Funky
+" CtrlP
 let g:ctrlp_working_path_mode = 0 " Use cwd for search path
 let g:ctrlp_match_window_reversed = 0
 let g:ctrlp_max_height = 30
