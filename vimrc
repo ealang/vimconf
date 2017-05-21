@@ -73,6 +73,14 @@ inoremap <silent> <C-L> <ESC>:TmuxNavigateRight<cr>
 inoremap <silent> <C-J> <ESC>:TmuxNavigateDown<cr>
 inoremap <silent> <C-K> <ESC>:TmuxNavigateUp<cr>
 
+" Split management
+set splitright
+set splitbelow
+
+" https://github.com/wesQ3/vim-windowswap#key-bindings
+let g:windowswap_map_keys = 0 "prevent default bindings
+nnoremap <silent> <Leader>w :call WindowSwap#EasyWindowSwap()<CR>
+
 " Ctags
 set tags=tags; " Look for tags in cwd and parents
 
@@ -107,8 +115,10 @@ let g:qfenter_keymap = {}
 let g:qfenter_keymap.vopen = ['<C-v>']
 let g:qfenter_keymap.hopen = ['<C-CR>', '<C-s>', '<C-x>']
 let g:qfenter_keymap.topen = ['<C-t>']
-vnoremap <Leader>a y:GrepperAck --known-types -i "<C-r>=fnameescape(@")<CR>"<Left>
 nnoremap <Leader>a :GrepperAck --known-types -i "<C-r>=expand('<cword>')<CR>"<Left>
+vnoremap <Leader>a y:GrepperAck --known-types -i "<C-r>=fnameescape(@")<CR>"<Left>
+nnoremap <Leader>A :GrepperAck --type="<C-R>=expand('%:e')<CR>" -i "<C-r>=expand('<cword>')<CR>"<Left>
+vnoremap <Leader>A y:GrepperAck --type="<C-R>=expand('%:e')<CR>" -i "<C-r>=fnameescape(@")<CR>"<Left>
 
 " CtrlP
 let g:ctrlp_working_path_mode = 0 " Use cwd for search path

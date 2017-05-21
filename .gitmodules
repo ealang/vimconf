@@ -52,3 +52,6 @@
 [submodule "bundle/ale"]
 	path = bundle/ale
 	url = https://github.com/w0rp/ale
+[submodule "bundle/vim-windowswap"]
+	path = bundle/vim-windowswap
+	url = https://github.com/wesQ3/vim-windowswap

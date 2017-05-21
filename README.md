@@ -11,7 +11,8 @@ Clone to vim home directory and run update.sh.
 | *Open file by name          | \<space\>-f  |
 | *Open buffer by name        | \<space\>-b  |
 | *Open tag by name           | \<space\>-t  |
-| *Search in all files        | \<space\>-a  |
+| *Text search (all ftypes)   | \<space\>-a  |
+| *Text search (current ftype)| \<space\>-A  |
 | *Open file browser          | \<F12\>      |
 | *Open file browser to current file            | \<F10\>       |
 | View outline of current file                  | \<ctrl\>-R    |
