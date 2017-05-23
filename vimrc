@@ -91,6 +91,7 @@ nnoremap <Leader>d "=strftime("%c")<CR>p
 let NERDTreeIgnore=['\~$', '\.pyc$', '\.class$', '^__pycache__$', '.o$']
 let NERDTreeMapJumpNextSibling = 0 " Prevent conflict with vim-tmux-navigator
 let NERDTreeMapJumpPrevSibling = 0 " Prevent conflict with vim-tmux-navigator
+let NERDTreeMapQuit = 0 " Binding already in use
 let NERDTreeMapOpenSplit='<C-s>'
 let NERDTreeMapOpenVSplit='<C-v>'
 let NERDTreeMapOpenInTab='<C-t>'
