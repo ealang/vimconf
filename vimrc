@@ -12,7 +12,7 @@ set shiftwidth=4
 set expandtab
 set backspace=2
 
-set foldmethod=syntax
+set foldmethod=indent
 autocmd BufWinEnter * normal zR
 
 set nowrap
@@ -76,6 +76,11 @@ inoremap <silent> <C-K> <ESC>:TmuxNavigateUp<cr>
 " Split management
 set splitright
 set splitbelow
+
+nnoremap <C-W>< 10<C-W><
+nnoremap <C-W>> 10<C-W>>
+nnoremap <C-W>+ 5<C-W>+
+nnoremap <C-W>- 5<C-W>-
 
 " https://github.com/wesQ3/vim-windowswap#key-bindings
 let g:windowswap_map_keys = 0 "prevent default bindings
