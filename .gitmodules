@@ -55,3 +55,6 @@
 [submodule "bundle/vim-windowswap"]
 	path = bundle/vim-windowswap
 	url = https://github.com/wesQ3/vim-windowswap
+[submodule "bundle/robotframework-vim"]
+	path = bundle/robotframework-vim
+	url = https://github.com/mfukar/robotframework-vim
