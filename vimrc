@@ -184,3 +184,7 @@ nnoremap q :q<CR>
 nnoremap <F5> :setlocal spell! <CR>
 imap <F5> <C-o><F5>
 vmap <F5> <ESC><F5>gv
+
+" Persistent undo
+set undofile
+set undodir=~/.vimundo
