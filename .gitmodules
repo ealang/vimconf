@@ -58,3 +58,6 @@
 [submodule "bundle/robotframework-vim"]
 	path = bundle/robotframework-vim
 	url = https://github.com/mfukar/robotframework-vim
+[submodule "bundle/molokai"]
+	path = bundle/molokai
+	url = https://github.com/ealang/molokai
