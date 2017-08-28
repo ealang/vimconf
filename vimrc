@@ -61,7 +61,8 @@ nnoremap <C-E> 3<C-E>
 
 " Save
 noremap <C-S> :update<CR>
-inoremap <C-S> <C-O>:update<CR>
+imap <C-S> <C-O><C-S>
+vmap <C-S> <ESC><C-S>gv
 
 " Enable mouse
 set mouse=a
