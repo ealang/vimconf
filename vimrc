@@ -93,7 +93,7 @@ set tags=tags; " Look for tags in cwd and parents
 nnoremap <Leader>d "=strftime("%c")<CR>p
 
 " NERDTree
-let NERDTreeIgnore=['\~$', '\.pyc$', '\.class$', '^__pycache__$', '.o$']
+let NERDTreeIgnore=['\~$', '\.pyc$', '\.class$', '^__pycache__$', '\.o$']
 let NERDTreeMapJumpNextSibling = 0 " Prevent conflict with vim-tmux-navigator
 let NERDTreeMapJumpPrevSibling = 0 " Prevent conflict with vim-tmux-navigator
 let NERDTreeMapQuit = 0 " Binding already in use
