@@ -61,3 +61,6 @@
 [submodule "bundle/molokai"]
 	path = bundle/molokai
 	url = https://github.com/ealang/molokai
+[submodule "bundle/vim-fontsize"]
+	path = bundle/vim-fontsize
+	url = https://github.com/drmikehenry/vim-fontsize

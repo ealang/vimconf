@@ -1,8 +1,4 @@
-set guioptions-=m  "remove menu bar
-set guioptions-=T  "remove toolbar
-set guioptions-=r  "remove right-hand scroll bar
-set guioptions-=L  "remove left-hand scroll bar
-set guioptions-=e  "use text-style tabs
+set guioptions=c " terminal styling
 
 if has("win32")
   cd $HOME
@@ -10,3 +6,5 @@ if has("win32")
 endif
 
 let g:nerdtree_tabs_open_on_gui_startup=0
+
+set spell
