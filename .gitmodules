@@ -67,3 +67,6 @@
 [submodule "bundle/typescript-vim"]
 	path = bundle/typescript-vim
 	url = https://github.com/leafgarland/typescript-vim
+[submodule "bundle/vim-code-dark"]
+	path = bundle/vim-code-dark
+	url = git@github.com:ealang2/vim-code-dark.git
