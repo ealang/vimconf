@@ -113,7 +113,8 @@ vnoremap < <gv
 vnoremap > >gv
 
 " Ale linting
-let g:ale_python_flake8_options = '--ignore=E501,E302'   " 79 char limit, 2 line breaks
+let g:ale_python_flake8_options = '--ignore=E501,E302'           " 79 char limit, 2 line breaks
+let g:ale_python_pylint_options = '--disable=C0111,C0103,W0621'  " module docstrings, naming conventions, redefine name in outer scope (for pytest fixtures)
 let g:ale_lint_delay = 1500
 noremap <Leader>s :call ale#Lint()<CR>
 
