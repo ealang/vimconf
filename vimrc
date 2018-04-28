@@ -64,6 +64,17 @@ noremap <C-S> :update<CR>
 imap <C-S> <C-O><C-S>
 vmap <C-S> <ESC><C-S>gv
 
+" Copy/paste shortcuts
+nnoremap <C-A> :%y+<CR>
+imap <C-A> <C-O><C-A>
+vnoremap <C-A> <ESC>ggVG
+
+vnoremap <C-C> y
+vnoremap <C-X> x
+
+noremap <C-V> P
+inoremap <C-V> <C-O>P
+
 " Enable mouse
 set mouse=a
 set ttymouse=xterm2
