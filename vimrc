@@ -216,3 +216,5 @@ vmap <F5> <ESC><F5>gv
 " Persistent undo
 set undofile
 set undodir=~/.vimundo
+
+runtime vimrc-local
