@@ -73,7 +73,7 @@ vnoremap <C-C> y
 vnoremap <C-X> x
 
 noremap <C-V> P
-inoremap <C-V> <C-O>P
+inoremap <C-V> <C-O>p
 
 " Enable mouse
 set mouse=a
