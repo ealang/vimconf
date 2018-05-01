@@ -73,3 +73,6 @@
 [submodule "bundle/nerdtree-execute"]
 	path = bundle/nerdtree-execute
 	url = https://github.com/ivalkeen/nerdtree-execute
+[submodule "bundle/vim-colors-synthwave"]
+	path = bundle/vim-colors-synthwave
+	url = https://github.com/TroyFletcher/vim-colors-synthwave.git
