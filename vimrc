@@ -64,16 +64,22 @@ noremap <C-S> :update<CR>
 imap <C-S> <C-O><C-S>
 vmap <C-S> <ESC><C-S>gv
 
-" Copy/paste shortcuts
-nnoremap <C-A> :%y+<CR>
-imap <C-A> <C-O><C-A>
-vnoremap <C-A> <ESC>ggVG
+" Select all
+nnoremap <C-A> ggVG
+imap <C-A> <ESC><C-A>
+vmap <C-A> <ESC><C-A>
 
+" Copy/paste shortcuts
+inoremap <C-C> <C-O>yy
+nnoremap <C-C> yy
 vnoremap <C-C> y
+
+inoremap <C-X> <C-O>dd
+nnoremap <C-X> dd
 vnoremap <C-X> x
 
 noremap <C-V> P
-inoremap <C-V> <C-O>p
+inoremap <C-V> <C-O>P
 
 " Enable mouse
 set mouse=a
@@ -133,7 +139,7 @@ let g:ale_linters = {
 " search
 let g:qfenter_keymap = {}
 let g:qfenter_keymap.vopen = ['<C-v>']
-let g:qfenter_keymap.hopen = ['<C-CR>', '<C-s>', '<C-x>']
+let g:qfenter_keymap.hopen = ['<C-CR>', '<C-s>']
 let g:qfenter_keymap.topen = ['<C-t>']
 nnoremap <Leader>a :GrepperAck --known-types -i "<C-r>=expand('<cword>')<CR>"<Left>
 vnoremap <Leader>a y:GrepperAck --known-types -i "<C-r>=fnameescape(@")<CR>"<Left>
