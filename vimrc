@@ -20,7 +20,15 @@ set linebreak
 set breakindent
 
 set t_Co=256
-colorscheme monokai
+
+" pull in color scheme from base16-shell
+" https://github.com/chriskempson/base16-shell
+if filereadable(expand("~/.vimrc_background"))
+  let base16colorspace=256
+  source ~/.vimrc_background
+else
+  colorscheme synthwave
+endif
 
 set noswapfile
 

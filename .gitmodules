@@ -76,3 +76,6 @@
 [submodule "bundle/vim-colors-synthwave"]
 	path = bundle/vim-colors-synthwave
 	url = https://github.com/TroyFletcher/vim-colors-synthwave.git
+[submodule "bundle/base16-vim"]
+	path = bundle/base16-vim
+	url = https://github.com/chriskempson/base16-vim
