@@ -13,9 +13,6 @@
 [submodule "bundle/vim-markdown"]
 	path = bundle/vim-markdown
 	url = https://github.com/plasticboy/vim-markdown
-[submodule "bundle/supertab"]
-	path = bundle/supertab
-	url = https://github.com/ervandew/supertab
 [submodule "bundle/ctrlp.vim"]
 	path = bundle/ctrlp.vim
 	url = https://github.com/ctrlpvim/ctrlp.vim
@@ -49,9 +46,6 @@
 [submodule "bundle/macvim-light"]
 	path = bundle/macvim-light
 	url = https://github.com/aunsira/macvim-light
-[submodule "bundle/ale"]
-	path = bundle/ale
-	url = https://github.com/w0rp/ale
 [submodule "bundle/vim-windowswap"]
 	path = bundle/vim-windowswap
 	url = https://github.com/wesQ3/vim-windowswap
@@ -79,3 +73,6 @@
 [submodule "bundle/base16-vim"]
 	path = bundle/base16-vim
 	url = https://github.com/chriskempson/base16-vim
+[submodule "bundle/YouCompleteMe"]
+	path = bundle/YouCompleteMe
+	url = https://github.com/Valloric/YouCompleteMe.git
