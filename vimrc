@@ -137,13 +137,6 @@ imap <F12> <ESC><F12>
 vnoremap < <gv
 vnoremap > >gv
 
-" Ale linting
-let g:ale_lint_delay = 1500
-noremap <Leader>s :call ale#Lint()<CR>
-let g:ale_linters = {
-\   'python': ['pylint'],
-\}
-
 " search
 let g:qfenter_keymap = {}
 let g:qfenter_keymap.vopen = ['<C-v>']
@@ -153,6 +146,9 @@ nnoremap <Leader>a :GrepperAck --known-types -i "<C-r>=expand('<cword>')<CR>"<Le
 vnoremap <Leader>a y:GrepperAck --known-types -i "<C-r>=fnameescape(@")<CR>"<Left>
 nnoremap <Leader>A :GrepperAck --type="<C-R>=expand('%:e')<CR>" -i "<C-r>=expand('<cword>')<CR>"<Left>
 vnoremap <Leader>A y:GrepperAck --type="<C-R>=expand('%:e')<CR>" -i "<C-r>=fnameescape(@")<CR>"<Left>
+
+" YCM
+noremap <Leader><Leader> :YcmCompleter FixIt<CR>
 
 " CtrlP
 let g:ctrlp_working_path_mode = 0 " Use cwd for search path
