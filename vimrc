@@ -149,6 +149,10 @@ vnoremap <Leader>A y:GrepperAck --type="<C-R>=expand('%:e')<CR>" -i "<C-r>=fname
 
 " YCM
 noremap <Leader><Leader> :YcmCompleter FixIt<CR>
+nnoremap <leader>= :YcmCompleter GetType<CR>
+nnoremap <leader>yb :YcmCompleter GoTo<CR>
+nnoremap <leader>yd :YcmCompleter GetDoc<CR>
+let g:ycm_autoclose_preview_window_after_completion = 1
 
 " CtrlP
 let g:ctrlp_working_path_mode = 0 " Use cwd for search path
