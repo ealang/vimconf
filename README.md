@@ -26,9 +26,9 @@ Clone to vim home directory and run update.sh.
 | Undo git hunk               | \<space\>hu |
 | Stage git hunk              | \<space\>hs |
 | Preview git hunk            | \<space\>hp |
-| Auto-fix code issue (Ycm)   | \<space\><space\> |
 | Show type (Ycm)             | \<space\>= |
-| Goto definition (Ycm)       | \<space\>yb |
-| Show doc (Ycm)              | \<space\>yd |
+| Auto-fix code issue (Ycm)   | \<space\>\<space\>f |
+| Goto definition (Ycm)       | \<space\>\<space\>b |
+| Show doc (Ycm)              | \<space\>\<space\>d |
 
 \* \<ctrl\>-v to open selection in vertical split, \<ctrl\>-s for horizontal split, \<ctrl\>-t for new tab.
