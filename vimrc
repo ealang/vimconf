@@ -148,10 +148,12 @@ nnoremap <Leader>A :GrepperAck --type="<C-R>=expand('%:e')<CR>" -i "<C-r>=expand
 vnoremap <Leader>A y:GrepperAck --type="<C-R>=expand('%:e')<CR>" -i "<C-r>=fnameescape(@")<CR>"<Left>
 
 " YCM
-noremap <Leader><Leader> :YcmCompleter FixIt<CR>
 nnoremap <leader>= :YcmCompleter GetType<CR>
-nnoremap <leader>yb :YcmCompleter GoTo<CR>
-nnoremap <leader>yd :YcmCompleter GetDoc<CR>
+nnoremap <leader><leader>= :YcmCompleter GetType<CR>
+nnoremap <Leader><Leader>f :YcmCompleter FixIt<CR>
+nnoremap <leader><Leader>b :YcmCompleter GoTo<CR>
+nnoremap <leader><Leader>d :YcmCompleter GetDoc<CR>
+nnoremap <leader><Leader>y :YcmCompleter<space>
 let g:ycm_autoclose_preview_window_after_completion = 1
 
 " CtrlP
