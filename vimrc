@@ -221,8 +221,9 @@ let g:tagbar_type_typescript = {
 \ }
 
 " Close window shortcut
-nnoremap Q q
 nnoremap q :q<CR>
+nnoremap Q :qa<CR>
+nnoremap <leader>m q
 
 " Toggle spelling
 nnoremap <F5> :setlocal spell! <CR>
