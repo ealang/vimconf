@@ -49,15 +49,9 @@
 [submodule "bundle/vim-windowswap"]
 	path = bundle/vim-windowswap
 	url = https://github.com/wesQ3/vim-windowswap
-[submodule "bundle/robotframework-vim"]
-	path = bundle/robotframework-vim
-	url = https://github.com/mfukar/robotframework-vim
 [submodule "bundle/molokai"]
 	path = bundle/molokai
 	url = https://github.com/ealang/molokai
-[submodule "bundle/vim-fontsize"]
-	path = bundle/vim-fontsize
-	url = https://github.com/drmikehenry/vim-fontsize
 [submodule "bundle/typescript-vim"]
 	path = bundle/typescript-vim
 	url = https://github.com/leafgarland/typescript-vim
@@ -67,9 +61,6 @@
 [submodule "bundle/nerdtree-execute"]
 	path = bundle/nerdtree-execute
 	url = https://github.com/ivalkeen/nerdtree-execute
-[submodule "bundle/vim-colors-synthwave"]
-	path = bundle/vim-colors-synthwave
-	url = https://github.com/TroyFletcher/vim-colors-synthwave.git
 [submodule "bundle/base16-vim"]
 	path = bundle/base16-vim
 	url = https://github.com/chriskempson/base16-vim
@@ -79,3 +70,6 @@
 [submodule "bundle/editorconfig-vim"]
 	path = bundle/editorconfig-vim
 	url = https://github.com/editorconfig/editorconfig-vim
+[submodule "bundle/ctrlp-modified.vim"]
+	path = bundle/ctrlp-modified.vim
+	url = git@github.com:jasoncodes/ctrlp-modified.vim.git
