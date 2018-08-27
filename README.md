@@ -22,8 +22,8 @@ Clone to vim home directory and run update.sh.
 | *Toggle NERDTree                              | \<F12\>             |
 | *Expand NERDTree, focus on current file       | \<F10\>             |
 | Open file browser to current file's directory | \<space\>e          |
-| View outline of current file                  | \<ctrl\>R           |
-| Search outline of current file (auto-closing) | \<ctrl\>r           |
+| View outline of current file                  | \<space\>R          |
+| Search outline of current file (auto-closing) | \<space\>r          |
 | Toggle spellcheck                             | \<F5\>              |
 | Prev color scheme                             | \<F6\>              |
 | Next color scheme                             | \<F7\>              |
