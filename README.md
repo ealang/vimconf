@@ -12,12 +12,16 @@ Clone to vim home directory and run update.sh.
 | Save current buffer                           | \<ctrl\>s           |
 | Copy/cut/paste                                | \<ctrl\>c/x/v       |
 | *Open file by name                            | \<space\>f          |
+| *Open recent files                            | \<space\>F          |
 | *Open buffer by name                          | \<space\>b          |
 | *Open tag by name                             | \<space\>t          |
+| *Open file modified in Git                    | \<space\>g          |
+| *Open file modified in Git branch             | \<space\>G          |
 | *Text search (all ftypes)                     | \<space\>a          |
 | *Text search (current ftype)                  | \<space\>A          |
-| *Open file browser                            | \<F12\>             |
-| *Open file browser to current file            | \<F10\>             |
+| *Toggle NERDTree                              | \<F12\>             |
+| *Expand NERDTree, focus on current file       | \<F10\>             |
+| Open file browser to current file's directory | \<space\>e          |
 | View outline of current file                  | \<ctrl\>R           |
 | Search outline of current file (auto-closing) | \<ctrl\>r           |
 | Toggle spellcheck                             | \<F5\>              |

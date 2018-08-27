@@ -128,6 +128,8 @@ let NERDTreeMapOpenVSplit='<C-v>'
 let NERDTreeMapOpenInTab='<C-t>'
 set encoding=utf-8 " Fix garbled arrows
 
+noremap <silent> <leader>e :e %:p:h<cr>
+
 noremap <F10> <ESC>:NERDTreeFind<CR>
 noremap <F12> <ESC>:NERDTreeToggle<CR>
 imap <F10> <ESC><F10>
@@ -166,14 +168,20 @@ let g:ctrlp_custom_ignore = {
   \ 'file': '\.pyc$\|\.class$\|\.o$' }
 
 noremap <Leader>f :CtrlP<CR>
+noremap <Leader>F :CtrlPMRUFiles<CR>
 noremap <Leader>t :CtrlPTag<CR>
 noremap <Leader>b :CtrlPBuffer<CR>
+noremap <Leader>g :CtrlPModified<CR>
+noremap <Leader>G :CtrlPBranchModified<CR>
 
 " Tagbar
 noremap <Leader>r :TagbarOpenAutoClose<CR>/\c
 noremap <Leader>R :TagbarToggle<CR>
 let g:tagbar_foldlevel = 1
 let g:tagbar_sort = 0
+
+" Markdown
+let g:vim_markdown_new_list_item_indent = 0 " avoid auto-indenting lists
 
 " https://github.com/majutsushi/tagbar/wiki#markdown
 let g:tagbar_type_markdown = {
