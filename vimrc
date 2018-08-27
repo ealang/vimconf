@@ -142,10 +142,10 @@ let g:qfenter_keymap = {}
 let g:qfenter_keymap.vopen = ['<C-v>']
 let g:qfenter_keymap.hopen = ['<C-CR>', '<C-s>']
 let g:qfenter_keymap.topen = ['<C-t>']
-nnoremap <Leader>a :GrepperAck --known-types -i "<C-r>=expand('<cword>')<CR>"<Left>
-vnoremap <Leader>a y:GrepperAck --known-types -i "<C-r>=fnameescape(@")<CR>"<Left>
-nnoremap <Leader>A :GrepperAck --type="<C-R>=expand('%:e')<CR>" -i "<C-r>=expand('<cword>')<CR>"<Left>
-vnoremap <Leader>A y:GrepperAck --type="<C-R>=expand('%:e')<CR>" -i "<C-r>=fnameescape(@")<CR>"<Left>
+nnoremap <Leader>a :GrepperAck --known-types "<C-r>=expand('<cword>')<CR>"<Left>
+vnoremap <Leader>a y:GrepperAck --known-types "<C-r>=fnameescape(@")<CR>"<Left>
+nnoremap <Leader>A :GrepperAck --type="<C-R>=expand('%:e')<CR>" "<C-r>=expand('<cword>')<CR>"<Left>
+vnoremap <Leader>A y:GrepperAck --type="<C-R>=expand('%:e')<CR>" "<C-r>=fnameescape(@")<CR>"<Left>
 
 " YCM
 nnoremap <leader>= :YcmCompleter GetType<CR>
