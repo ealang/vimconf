@@ -87,7 +87,7 @@ nnoremap <C-X> dd
 vnoremap <C-X> x
 
 noremap <C-V> P
-inoremap <C-V> <ESC>p
+inoremap <C-V> <ESC>pa
 
 " Enable mouse
 set mouse=a
@@ -144,8 +144,8 @@ let g:qfenter_keymap = {}
 let g:qfenter_keymap.vopen = ['<C-v>']
 let g:qfenter_keymap.hopen = ['<C-CR>', '<C-s>']
 let g:qfenter_keymap.topen = ['<C-t>']
-nnoremap <Leader>a :GrepperAck --known-types "<C-r>=expand('<cword>')<CR>"<Left>
-vnoremap <Leader>a y:GrepperAck --known-types "<C-r>=fnameescape(@")<CR>"<Left>
+nnoremap <Leader>a :GrepperAck -k "<C-r>=expand('<cword>')<CR>"<Left>
+vnoremap <Leader>a y:GrepperAck -k "<C-r>=fnameescape(@")<CR>"<Left>
 nnoremap <Leader>A :GrepperAck --type="<C-R>=expand('%:e')<CR>" "<C-r>=expand('<cword>')<CR>"<Left>
 vnoremap <Leader>A y:GrepperAck --type="<C-R>=expand('%:e')<CR>" "<C-r>=fnameescape(@")<CR>"<Left>
 
