@@ -243,3 +243,5 @@ set undofile
 set undodir=~/.vimundo
 
 runtime vimrc-local
+
+nnoremap <leader>c i- [ ] 
