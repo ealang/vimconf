@@ -31,12 +31,6 @@
 [submodule "bundle/vim-colorstepper"]
 	path = bundle/vim-colorstepper
 	url = https://github.com/qualiabyte/vim-colorstepper
-[submodule "support/markdown2ctags"]
-	path = support/markdown2ctags
-	url = https://github.com/jszakmeister/markdown2ctags
-[submodule "support/rst2ctags"]
-	path = support/rst2ctags
-	url = https://github.com/jszakmeister/rst2ctags
 [submodule "bundle/vim-grepper"]
 	path = bundle/vim-grepper
 	url = https://github.com/mhinz/vim-grepper
@@ -72,7 +66,7 @@
 	url = https://github.com/editorconfig/editorconfig-vim
 [submodule "bundle/ctrlp-modified.vim"]
 	path = bundle/ctrlp-modified.vim
-	url = git@github.com:jasoncodes/ctrlp-modified.vim.git
+	url = https://github.com/jasoncodes/ctrlp-modified.vim
 [submodule "bundle/ale"]
 	path = bundle/ale
 	url = https://github.com/w0rp/ale.git

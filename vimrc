@@ -183,51 +183,6 @@ let g:tagbar_sort = 0
 " Markdown
 let g:vim_markdown_new_list_item_indent = 0 " avoid auto-indenting lists
 
-" https://github.com/majutsushi/tagbar/wiki#markdown
-let g:tagbar_type_markdown = {
-    \ 'ctagstype': 'markdown',
-    \ 'ctagsbin' : $VIMHOME . '/support/markdown2ctags/markdown2ctags.py',
-    \ 'ctagsargs' : '-f - --sort=yes',
-    \ 'kinds' : [
-        \ 's:sections',
-        \ 'i:images'
-    \ ],
-    \ 'sro' : '|',
-    \ 'kind2scope' : {
-        \ 's' : 'section',
-    \ },
-    \ 'sort': 0,
-\ }
-" https://github.com/majutsushi/tagbar/wiki#restructuredtext
-let g:tagbar_type_rst = {
-    \ 'ctagstype': 'rst',
-    \ 'ctagsbin' : $VIMHOME . '/support/rst2ctags/rst2ctags.py',
-    \ 'ctagsargs' : '-f - --sort=yes',
-    \ 'kinds' : [
-        \ 's:sections',
-        \ 'i:images'
-    \ ],
-    \ 'sro' : '|',
-    \ 'kind2scope' : {
-        \ 's' : 'section',
-    \ },
-    \ 'sort': 0,
-\ }
-" https://github.com/majutsushi/tagbar/wiki#typescript
-let g:tagbar_type_typescript = {
-  \ 'ctagstype': 'typescript',
-  \ 'kinds': [
-    \ 'c:classes',
-    \ 'n:modules',
-    \ 'f:functions',
-    \ 'v:variables',
-    \ 'v:varlambdas',
-    \ 'm:members',
-    \ 'i:interfaces',
-    \ 'e:enums',
-  \ ]
-\ }
-
 " Close window shortcut
 nnoremap q :q<CR>
 nnoremap Q :qa<CR>
@@ -245,4 +200,3 @@ set undodir=~/.vimundo
 runtime vimrc-local
 
 nnoremap <leader>c i- [ ] 
-xnoremap <leader>e :!
