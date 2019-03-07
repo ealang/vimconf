@@ -91,7 +91,7 @@ inoremap <C-V> <ESC>pa
 
 " Enable mouse
 set mouse=a
-set ttymouse=xterm2
+set ttymouse=sgr
 
 " vim-tmux-navigator
 inoremap <silent> <C-H> <ESC>:TmuxNavigateLeft<cr>
