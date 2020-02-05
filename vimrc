@@ -7,8 +7,8 @@ set number
 
 syntax on
 filetype plugin indent on
-set tabstop=2
-set shiftwidth=2
+set tabstop=4
+set shiftwidth=4
 set expandtab
 set backspace=2
 
