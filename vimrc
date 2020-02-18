@@ -79,7 +79,7 @@ inoremap <C-X> <C-O>"+dd
 nnoremap <C-X> "+dd
 vnoremap <C-X> "+x
 
-noremap <C-V> "+P
+noremap <C-V> "+p
 inoremap <C-V> <ESC>"+pa
 
 " Enable mouse
