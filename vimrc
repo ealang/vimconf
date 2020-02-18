@@ -48,13 +48,6 @@ nnoremap / /\c
 nnoremap ? ?\c
 nnoremap <silent> <Leader>/ :nohlsearch<CR><C-L>
 
-" Use system clipboard
-if has("win32")
-  set clipboard=unnamed
-else
-  set clipboard=unnamedplus
-endif
-
 " Navigate wrapped lines intuitively
 nnoremap j gj
 nnoremap k gk
@@ -77,17 +70,17 @@ nnoremap <C-A> ggVG
 imap <C-A> <ESC><C-A>
 vmap <C-A> <ESC><C-A>
 
-" Copy/paste shortcuts
-inoremap <C-C> <C-O>yy
-nnoremap <C-C> yy
-vnoremap <C-C> y
+" Copy/paste shortcuts (system clipboard)
+inoremap <C-C> <C-O>"+yy
+nnoremap <C-C> "+yy
+vnoremap <C-C> "+y
 
-inoremap <C-X> <C-O>dd
-nnoremap <C-X> dd
-vnoremap <C-X> x
+inoremap <C-X> <C-O>"+dd
+nnoremap <C-X> "+dd
+vnoremap <C-X> "+x
 
-noremap <C-V> P
-inoremap <C-V> <ESC>pa
+noremap <C-V> "+P
+inoremap <C-V> <ESC>"+pa
 
 " Enable mouse
 set mouse=a
