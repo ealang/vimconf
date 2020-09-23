@@ -173,6 +173,13 @@ noremap <Leader>R :TagbarToggle<CR>
 let g:tagbar_foldlevel = 1
 let g:tagbar_sort = 0
 
+let g:tagbar_type_markdown = {
+    \ 'ctagstype' : 'markdown',
+    \ 'kinds' : [
+        \ 'h:Heading'
+    \ ]
+\ }
+
 " Markdown
 let g:vim_markdown_new_list_item_indent = 0 " avoid auto-indenting lists
 
