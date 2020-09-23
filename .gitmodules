@@ -37,21 +37,12 @@
 [submodule "bundle/QFEnter"]
 	path = bundle/QFEnter
 	url = https://github.com/yssl/QFEnter
-[submodule "bundle/macvim-light"]
-	path = bundle/macvim-light
-	url = https://github.com/aunsira/macvim-light
 [submodule "bundle/vim-windowswap"]
 	path = bundle/vim-windowswap
 	url = https://github.com/wesQ3/vim-windowswap
-[submodule "bundle/molokai"]
-	path = bundle/molokai
-	url = https://github.com/ealang/molokai
 [submodule "bundle/typescript-vim"]
 	path = bundle/typescript-vim
 	url = https://github.com/leafgarland/typescript-vim
-[submodule "bundle/vim-code-dark"]
-	path = bundle/vim-code-dark
-	url = https://github.com/ealang2/vim-code-dark
 [submodule "bundle/nerdtree-execute"]
 	path = bundle/nerdtree-execute
 	url = https://github.com/ivalkeen/nerdtree-execute
