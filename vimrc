@@ -137,10 +137,10 @@ let g:qfenter_keymap = {}
 let g:qfenter_keymap.vopen = ['<C-v>']
 let g:qfenter_keymap.hopen = ['<C-CR>', '<C-s>']
 let g:qfenter_keymap.topen = ['<C-t>']
-nnoremap <Leader>a :GrepperAck -k "<C-r>=expand('<cword>')<CR>"<Left>
-vnoremap <Leader>a y:GrepperAck -k "<C-r>=fnameescape(@")<CR>"<Left>
-nnoremap <Leader>A :GrepperAck --type="<C-R>=expand('%:e')<CR>" "<C-r>=expand('<cword>')<CR>"<Left>
-vnoremap <Leader>A y:GrepperAck --type="<C-R>=expand('%:e')<CR>" "<C-r>=fnameescape(@")<CR>"<Left>
+nnoremap <Leader>a :GrepperAck -i -k "<C-r>=expand('<cword>')<CR>"<Left>
+vnoremap <Leader>a y:GrepperAck -i -k "<C-r>=fnameescape(@")<CR>"<Left>
+nnoremap <Leader>A :GrepperAck -i --type="<C-R>=expand('%:e')<CR>" "<C-r>=expand('<cword>')<CR>"<Left>
+vnoremap <Leader>A y:GrepperAck -i --type="<C-R>=expand('%:e')<CR>" "<C-r>=fnameescape(@")<CR>"<Left>
 
 " YCM
 nnoremap <leader>= :YcmCompleter GetType<CR>
@@ -182,6 +182,7 @@ let g:tagbar_type_markdown = {
 
 " Markdown
 let g:vim_markdown_new_list_item_indent = 0 " avoid auto-indenting lists
+let g:vim_markdown_toc_autofit = 1 " shrink markdown toc
 
 " Close window shortcut
 nnoremap q :q<CR>
