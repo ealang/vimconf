@@ -201,3 +201,7 @@ set undodir=~/.vimundo
 runtime vimrc-local
 
 nnoremap <leader>c i- [ ] 
+
+" Copy path to file
+nnoremap <Leader>i :let tmp=fnameescape(getreg('%')) \| let @+=tmp \| let @"=tmp \| echo tmp<CR>
+nnoremap <Leader>I :let tmp=fnameescape(expand('%:p')) \| let @+=tmp \| let @"=tmp \| echo tmp<CR>
